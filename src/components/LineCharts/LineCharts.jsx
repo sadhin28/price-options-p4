@@ -1,4 +1,4 @@
-import { LineChart, Line , XAxis ,YAxis, ZAxis } from "recharts";
+import { LineChart, Line , XAxis ,YAxis, BarChart } from "recharts";
 const LineCharts = () => {
     const mathMarks = [
         {
@@ -95,9 +95,10 @@ const LineCharts = () => {
 
     return (
         <div className="font-bold ">
-            <LineChart className="rounded-2xl bg-black p-10" width={450} height={400} data={mathMarks}>
+            <LineChart className="rounded-2xl bg-black p-10"  width={430} height={350} data={mathMarks}>
                 <XAxis dataKey={'name'}></XAxis>
                 <YAxis dataKey={''}></YAxis>
+                
                 <Line dataKey='math' stroke="red"></Line>
                 <Line dataKey='physics' stroke="Blue"></Line>
                 <Line dataKey='english' stroke="green"></Line>

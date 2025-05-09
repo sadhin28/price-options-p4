@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import { BiAlignLeft } from "react-icons/bi";
 import Priceoptions from './components/Priceoptions/Priceoptions';
 import LineCharts from './components/LineCharts/LineCharts';
+import BarCharts from './components/BarChart/BarCharts';
 function App() {
  
 
@@ -15,7 +16,10 @@ function App() {
        
     </div>
     < Priceoptions></Priceoptions>
-    <LineCharts></LineCharts>
+    <div className='grid justify-center gap-5 md:grid-cols-2 relative -z-30'>
+       <LineCharts></LineCharts>
+       <BarCharts></BarCharts>
+    </div>
     </div>
   )
 }
