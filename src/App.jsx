@@ -7,8 +7,8 @@ function App() {
  
 
   return (
-    <div className='mx-5'>
-      <div className='sticky top-0 lg:bg-amber-600 bg-amber-600  '>
+    <div className='mx-5  md:text-white'>
+      <div className='sticky top-0 lg:bg-gray-600 bg-gray-600  '>
        {/* <Navbar></Navbar> */}
        <Mynavbar></Mynavbar>
        

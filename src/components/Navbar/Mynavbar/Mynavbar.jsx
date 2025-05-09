@@ -16,13 +16,13 @@ const Mynavbar = () => {
       <div>
         
           <nav className="py-5">
-           <div className="md:hidden " onClick={()=>setopen(!open)}>
+           <div className="md:hidden text-white" onClick={()=>setopen(!open)}>
                {
-                 open == true?<IoMdClose className="text-4xl" />:<BiAlignLeft className="text-4xl"/>
+                 open == true?<IoMdClose className="text-4xl " />:<BiAlignLeft className="text-4xl"/>
                }
                
            </div>
-            <ul className={`px-3 ml-3 font-bold justify-end py-4 md:py-0 md:flex md:duration-initial rounded-2xl md:static duration-1000 md:duration-0 absolute md:top-0 ${open ? ' top-20':'-top-1600'} md:bg-transparent md:w-full bg-amber-300 w-110  `}>
+            <ul className={`px-3 ml-0.5 font-bold justify-end py-4 md:py-0 md:flex md:duration-initial rounded-2xl md:static duration-1000 md:duration-0 absolute md:top-0 ${open ? ' top-20':'-top-1600'} md:bg-transparent md:w-full bg-blue-50 w-110  `}>
 
             {
              routes.map(route =><Link key={route.id} route={route}></Link>)
