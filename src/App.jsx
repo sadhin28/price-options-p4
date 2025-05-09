@@ -3,6 +3,7 @@ import Mynavbar from './components/Navbar/Mynavbar/Mynavbar'
 import Navbar from './components/Navbar/Navbar'
 import { BiAlignLeft } from "react-icons/bi";
 import Priceoptions from './components/Priceoptions/Priceoptions';
+import LineCharts from './components/LineCharts/LineCharts';
 function App() {
  
 
@@ -14,6 +15,7 @@ function App() {
        
     </div>
     < Priceoptions></Priceoptions>
+    <LineCharts></LineCharts>
     </div>
   )
 }

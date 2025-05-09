@@ -1,6 +1,6 @@
 import { MdSportsGymnastics } from "react-icons/md";
 const PriceOption = ({option}) => {
-     const {name,id,price,features}=option;
+     const {name,price,features}=option;
    
     return (
         <div className='text-center flex flex-col  text-white bg-blue-600 border rounded-2xl p-4 '>
