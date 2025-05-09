@@ -1,4 +1,5 @@
 import './App.css'
+import Mynavbar from './components/Navbar/Mynavbar/Mynavbar'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <div>
-       <Navbar></Navbar>
+       {/* <Navbar></Navbar> */}
+       <Mynavbar></Mynavbar>
     </div>
   )
 }
