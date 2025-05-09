@@ -22,7 +22,7 @@ function App() {
        <LineCharts></LineCharts>
        <BarCharts></BarCharts>
     </div>
-     <div className='mt-10 mb-10 '>
+     <div className='mt-10 mb-10 grid justify-center gap-5 md:grid-cols-2 relative -z-30 '>
        <Phoness></Phoness>
      </div>
     </div>
