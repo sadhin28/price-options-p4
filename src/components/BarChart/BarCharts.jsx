@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis,CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis,CartesianGrid, Tooltip } from 'recharts';
 const BarCharts = () => {
    const  PhoneData=[
   {
@@ -79,10 +79,11 @@ const BarCharts = () => {
             <BarChart className='rounded-2xl bg-black p-10' width={430} height={350} data={PhoneData}>
                 <XAxis dataKey={'name'}></XAxis>
                 <YAxis dataKey={''}></YAxis>
+                <Tooltip></Tooltip>
                 <CartesianGrid stroke="#ccc" />
                 <Bar dataKey='stock' barSize={30} fill="#C51095FF" ></Bar>
                 <Bar dataKey='price' barSize={30} fill="#DEC616FF" ></Bar>
-               
+                
             </BarChart>
         </div>
     );

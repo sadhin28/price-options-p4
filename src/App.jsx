@@ -5,6 +5,8 @@ import { BiAlignLeft } from "react-icons/bi";
 import Priceoptions from './components/Priceoptions/Priceoptions';
 import LineCharts from './components/LineCharts/LineCharts';
 import BarCharts from './components/BarChart/BarCharts';
+import Phoness from './components/Phoness/Phoness';
+
 function App() {
  
 
@@ -20,6 +22,9 @@ function App() {
        <LineCharts></LineCharts>
        <BarCharts></BarCharts>
     </div>
+     <div className='mt-10 mb-10 '>
+       <Phoness></Phoness>
+     </div>
     </div>
   )
 }
