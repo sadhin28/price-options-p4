@@ -1,7 +1,9 @@
-import { useLayoutEffect } from "react";
+import { useState } from "react";
 import Link from "../../Link/Link";
 import { BiAlignLeft } from "react-icons/bi";
+import { IoMdClose } from "react-icons/io";
 const Mynavbar = () => {
+    const [open,setopen]=useState(false)
     const routes = [
   { id: 1, path: '/', name: 'Home' },
   { id: 2, path: '/about', name: 'About' },
@@ -11,12 +13,17 @@ const Mynavbar = () => {
 ];
 
     return (
-        <nav className=" text-2xl">
-            <BiAlignLeft className="md:hidden " />
-            <ul className="md:flex">
+        <nav className="py-5">
+           <div className="md:hidden " onClick={()=>setopen(!open)}>
+               {
+                 open == true?<IoMdClose className="text-4xl" />:<BiAlignLeft className="text-4xl"/>
+               }
+               
+           </div>
+            <ul className={` ml-2 font-bold justify-end py-4 md:py-0 md:flex md:duration-initial rounded-2xl md:static duration-1000 md:duration-0 absolute md:top-0 ${open ? ' top-20':'-top-1600'} md:bg-transparent md:w-full bg-amber-300 w-110  `}>
 
             {
-                routes.map(route =><Link key={route.id} route={route}></Link>)
+             routes.map(route =><Link key={route.id} route={route}></Link>)
             }
             </ul>
         </nav>

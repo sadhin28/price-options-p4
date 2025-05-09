@@ -6,7 +6,7 @@ function App() {
  
 
   return (
-    <div className='mx-5'>
+    <div className='mx-5 lg:bg-amber-600 bg-amber-600  '>
        {/* <Navbar></Navbar> */}
        <Mynavbar></Mynavbar>
     </div>
