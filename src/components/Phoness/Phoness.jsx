@@ -25,11 +25,11 @@ const Phoness = () => {
         
      })
      
-    }, [])
+    },)
     
 
     return (
-        <div>
+        <div className="text-black">
              {
                 loadings &&  <span class="loading loading-bars  w-20"></span>
              }

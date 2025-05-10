@@ -1,3 +1,4 @@
+
 import PriceOption from "../PriceOption/PriceOption";
 const Priceoptions = () => {
   const priceOptions =   [
@@ -65,16 +66,23 @@ const Priceoptions = () => {
             ]
         }
     ]
-
+   
+ 
     return (
+        
         <div className="">
-            
-                  <h2 className=" font-black mdtext-5xl text-3xl mt-5 md:mt-10 text-balance md:text-black">Best Prices in the town</h2>
+               
+                <h2 className=" font-black mdtext-5xl text-3xl mt-5 md:mt-10 text-balance md:text-black">Best Prices in the town</h2>
+               
                <div className=" mb-10 font-bold mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                  {
-                    priceOptions.map(option=><PriceOption option={option}></PriceOption>)
+               
+                {
+                    
+                   priceOptions.map(option=><PriceOption option={option}></PriceOption>)
+                    
                  }
                </div>
+                
         </div>
     );
 };

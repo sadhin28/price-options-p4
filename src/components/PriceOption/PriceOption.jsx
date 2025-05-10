@@ -10,7 +10,7 @@ const PriceOption = ({option}) => {
             </h2> <br />
             <h4 className='text-3xl'>{name}</h4>
             <div className="divider "></div>
-        
+             
              <div className="flex-grow">
                  {
                   features.map(f=><p className="flex flex-grow items-center gap-2"><MdSportsGymnastics />{f}</p>)
