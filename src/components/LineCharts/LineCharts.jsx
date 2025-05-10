@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { LineChart, Line , XAxis ,YAxis,CartesianGrid  } from "recharts";
+
 const LineCharts = () => {
     const mathMarks = [
         {
@@ -92,10 +94,13 @@ const LineCharts = () => {
             "english": 87
         }
     ]
-
+   
     return (
-        <div className="font-bold ">
-            <LineChart className="rounded-2xl bg-black p-10"  width={430} height={350} data={mathMarks}>
+       
+          <div>
+           
+              <div>
+                <LineChart className="rounded-2xl bg-black p-10"  width={430} height={350} data={mathMarks}>
                 <XAxis dataKey={'name'}></XAxis>
                 <YAxis dataKey={''}></YAxis>
                 <CartesianGrid stroke="#ccc" />
@@ -105,7 +110,9 @@ const LineCharts = () => {
                 <Line dataKey='biology' stroke="yellow"></Line>
                 <Line dataKey='chemistry'stroke="black"></Line>
             </LineChart>
-        </div>
+            </div>
+          </div>
+       
     );
 };
 

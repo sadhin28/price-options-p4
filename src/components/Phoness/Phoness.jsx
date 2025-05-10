@@ -5,7 +5,7 @@ import { Bar, BarChart,XAxis ,YAxis,Tooltip } from "recharts";
 
 const Phoness = () => {
      const [phone , setPhone]= useState([]);
-     
+          const [loadings,setloadings]=useState(true)
     useEffect(()=>{
     //    fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
     //    .then(res => res.json())
@@ -20,13 +20,19 @@ const Phoness = () => {
             }
             return obj
         })
+        setloadings(false)
         setPhone(phonewitfakehData)
+        
      })
      
-    },)
-    console.log(phone)
+    }, [])
+    
+
     return (
         <div>
+             {
+                loadings &&  <span class="loading loading-bars  w-20"></span>
+             }
              <h2 className="text-3xl">Phones: {phone.length}</h2>
 
              <div>
